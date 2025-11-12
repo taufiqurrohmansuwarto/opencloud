@@ -21,6 +21,9 @@ services:
       # bind to port 7799 for nginx reverse proxy
       OC_HTTP_ADDR: 0.0.0.0:7799
       PROXY_HTTP_ADDR: 0.0.0.0:7799
+      # subpath configuration - try multiple approaches
+      WEB_UI_CONFIG_SERVER: https://siasn.bkd.jatimprov.go.id/bkdcloud
+      WEB_ASSET_PATH: /bkdcloud
       # do not use SSL between the reverse proxy and OpenCloud
       PROXY_TLS: "false"
       # INSECURE: needed if OpenCloud / reverse proxy is using self generated certificates
