@@ -21,6 +21,8 @@ services:
       # bind to port 7799 for nginx reverse proxy
       OC_HTTP_ADDR: 0.0.0.0:7799
       PROXY_HTTP_ADDR: 0.0.0.0:7799
+      # subpath configuration for /bkdcloud
+      PROXY_HTTP_ROOT: /bkdcloud
       # do not use SSL between the reverse proxy and OpenCloud
       PROXY_TLS: "false"
       # INSECURE: needed if OpenCloud / reverse proxy is using self generated certificates
